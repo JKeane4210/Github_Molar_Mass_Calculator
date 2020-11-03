@@ -117,7 +117,7 @@ class LabelPairedEntry():
 		self.label = Label(self.base_frame,
 						   text       = text,
 						   background = "#3CBF54",
-						   fg         = "white")
+						   fg         = "black")
 		self.label.pack(side = LEFT, 
 					    padx = 10, 
 						pady = (0, 10))
