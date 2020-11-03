@@ -15,7 +15,7 @@ How To Use GUI:
 import json
 from tkinter import *
 
-file_text = open("PeriodicTableJSON.json", "r").read()
+file_text = open("PeriodicTableJSON.json", encoding = "utf8").read()
 periodic_table_json = json.loads(file_text)
 atomic_mass_dict = {}
 
@@ -142,7 +142,7 @@ def main():
 	molar_mass_label.pack(padx = (0, 10), pady = (0, 10))
 	calculate = Button(root, text       = "Calculate", 
 						     command    = lambda: molar_mass_label.configure(text = str(molar_mass_of_molecule(molecule.get())) + " g"),
-							 background = "#3CBF54")
+							 background = "white")
 	calculate.pack(padx = (0, 10), 
 				   pady = (0, 10))
 	canvas = Canvas(root, width = 300, height = 350, background = "#3CBF54", borderwidth=0, highlightthickness=0)      
